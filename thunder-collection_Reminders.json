@@ -1,0 +1,133 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Reminders",
+    "dateExported": "2023-11-19T01:40:50.309Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6e2ba1fa-cb35-4fbc-a2d0-874ed9db9c3b",
+            "colId": "bfcc1c1b-07d5-43ed-bec8-52800ef4cb7e",
+            "containerId": "",
+            "name": "Get All Reminders",
+            "url": "http://127.0.0.1:8000/api/reminders/get/all",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-17T20:28:11.475Z",
+            "modified": "2023-11-17T20:59:07.923Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzc3dvcmQiOiJwYmtkZjJfc2hhMjU2JDYwMDAwMCRyOWVWOHVKN29hdEFzNW13VkplQVd2JG1hd3QvZElJQzdsTFY5SjZrSFpxeW1BK3A1dU5McWM3Um9OSVRUYmpYTEE9IiwibGFzdF9sb2dpbiI6bnVsbCwiaXNfc3VwZXJ1c2VyIjp0cnVlLCJ1c2VybmFtZSI6IlJvc2ExMiIsImZpcnN0X25hbWUiOiIiLCJsYXN0X25hbWUiOiIiLCJlbWFpbCI6ImRhdXJ5QGdtYWlsLmNvbSIsImlzX3N0YWZmIjp0cnVlLCJpc19hY3RpdmUiOnRydWUsImRhdGVfam9pbmVkIjoiMjAyMy0xMC0yMFQxNjozNzo0NS4zMjg2MDlaIiwiQnVkZ2V0IjowLjAsIkFjY291bnRfdHlwZSI6MCwidXNlcl9wZXJtaXNzaW9ucyI6W119.Ec8Nd62faD1OhmzKe5rUcIz3Tz3VoRXdZoO6rsALfBY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"field\": \"\",\n  \"value\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "62ef0609-ce1e-4343-a1cb-deda9e2dff3e",
+            "colId": "bfcc1c1b-07d5-43ed-bec8-52800ef4cb7e",
+            "containerId": "",
+            "name": "Get Reminder Types",
+            "url": "http://127.0.0.1:8000/api/reminders/types/get",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-17T20:32:52.534Z",
+            "modified": "2023-11-17T20:33:09.717Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "38c79c17-71a8-41c6-88a5-aeea26aba5ef",
+            "colId": "bfcc1c1b-07d5-43ed-bec8-52800ef4cb7e",
+            "containerId": "",
+            "name": "Get Reminders Filtered",
+            "url": "http://127.0.0.1:8000/api/reminders/get",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-17T20:36:44.637Z",
+            "modified": "2023-11-17T21:06:09.648Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicGFzc3dvcmQiOiJwYmtkZjJfc2hhMjU2JDYwMDAwMCRKR3p1cGRmd2ptajBJbkxjWTZnOVhEJHhTY3IyUkVENWQ1RE5xR2k5eU13eUhmcUVMSjI3M0xPc2xzZkRLcEUwUlk9IiwibGFzdF9sb2dpbiI6bnVsbCwiaXNfc3VwZXJ1c2VyIjpmYWxzZSwidXNlcm5hbWUiOiJUZXN0VXNlcjEiLCJmaXJzdF9uYW1lIjoiUHJpbWVyTiIsImxhc3RfbmFtZSI6Ikxhc3QiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaXNfc3RhZmYiOmZhbHNlLCJpc19hY3RpdmUiOnRydWUsImRhdGVfam9pbmVkIjoiMjAyMy0xMC0yNFQxMzoyNDoyOC45MTIzOTJaIiwiQnVkZ2V0IjowLjAsIkFjY291bnRfdHlwZSI6MiwidXNlcl9wZXJtaXNzaW9ucyI6W119.0_BmICcc3R8exfvlD7Ccktw31W23JTEzeeCfKj6MIXA"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "49644401-b05a-4dc5-9c0a-9cf21078c5e5",
+            "colId": "bfcc1c1b-07d5-43ed-bec8-52800ef4cb7e",
+            "containerId": "",
+            "name": "Create Reminder",
+            "url": "http://127.0.0.1:8000/api/reminders/create",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-17T21:06:42.156Z",
+            "modified": "2023-11-19T00:16:06.337Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiQWNjb3VudF90eXBlIjpudWxsLCJwYXNzd29yZCI6InBia2RmMl9zaGEyNTYkNjAwMDAwJHI5ZVY4dUo3b2F0QXM1bXdWSmVBV3YkbWF3dC9kSUlDN2xMVjlKNmtIWnF5bUErcDV1TkxxYzdSb05JVFRialhMQT0iLCJsYXN0X2xvZ2luIjpudWxsLCJpc19zdXBlcnVzZXIiOnRydWUsInVzZXJuYW1lIjoiUm9zYTEyIiwiZmlyc3RfbmFtZSI6IiIsImxhc3RfbmFtZSI6IiIsImVtYWlsIjoiZGF1cnlAZ21haWwuY29tIiwiaXNfc3RhZmYiOnRydWUsImlzX2FjdGl2ZSI6dHJ1ZSwiZGF0ZV9qb2luZWQiOiIyMDIzLTEwLTIwVDE2OjM3OjQ1LjMyODYwOVoiLCJCdWRnZXQiOjAuMCwidXNlcl9wZXJtaXNzaW9ucyI6W119.sYqaNZ6zbFkDT8Q_BwGiS-W14j0uKmn26c-TwvM7Sxk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Amount\": 500,\n  \"Interval\": 11,\n  \"Date\": \"2023-11-30\",\n  \"NextRunning\": \"2023-11-30\",\n  \"Title\": \"Example 2\",\n  \"Description\": \"Description Example 1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8179563d-6000-4415-ae92-f79ce323a0af",
+            "colId": "bfcc1c1b-07d5-43ed-bec8-52800ef4cb7e",
+            "containerId": "",
+            "name": "Update Reminder",
+            "url": "http://127.0.0.1:8000/api/reminders/update/Amount",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-11-18T22:43:25.637Z",
+            "modified": "2023-11-18T22:56:10.794Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiQWNjb3VudF90eXBlIjoiQ29tcGFueSIsInBhc3N3b3JkIjoicGJrZGYyX3NoYTI1NiQ2MDAwMDAkSkd6dXBkZndqbWowSW5MY1k2ZzlYRCR4U2NyMlJFRDVkNUROcUdpOXlNd3lIZnFFTEoyNzNMT3Nsc2ZES3BFMFJZPSIsImxhc3RfbG9naW4iOm51bGwsImlzX3N1cGVydXNlciI6ZmFsc2UsInVzZXJuYW1lIjoiVGVzdFVzZXIxIiwiZmlyc3RfbmFtZSI6IlByaW1lck4iLCJsYXN0X25hbWUiOiJMYXN0IiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzX3N0YWZmIjpmYWxzZSwiaXNfYWN0aXZlIjp0cnVlLCJkYXRlX2pvaW5lZCI6IjIwMjMtMTAtMjRUMTM6MjQ6MjguOTEyMzkyWiIsIkJ1ZGdldCI6MC4wLCJ1c2VyX3Blcm1pc3Npb25zIjpbXX0.u3JzYRPfoiuu22_wQkh0bw-l673FksGyi_XofHTM8io"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"reminder\": 1,\n  \"Amount\": 800\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1177c2b5-a3c9-4be8-973d-f8da2fff8225",
+            "colId": "bfcc1c1b-07d5-43ed-bec8-52800ef4cb7e",
+            "containerId": "",
+            "name": "Delete Reminder",
+            "url": "http://127.0.0.1:8000/api/reminders/delete/1",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-11-18T22:56:38.019Z",
+            "modified": "2023-11-19T00:15:36.816Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiQWNjb3VudF90eXBlIjoiQ29tcGFueSIsInBhc3N3b3JkIjoicGJrZGYyX3NoYTI1NiQ2MDAwMDAkSkd6dXBkZndqbWowSW5MY1k2ZzlYRCR4U2NyMlJFRDVkNUROcUdpOXlNd3lIZnFFTEoyNzNMT3Nsc2ZES3BFMFJZPSIsImxhc3RfbG9naW4iOm51bGwsImlzX3N1cGVydXNlciI6ZmFsc2UsInVzZXJuYW1lIjoiVGVzdFVzZXIxIiwiZmlyc3RfbmFtZSI6IlByaW1lck4iLCJsYXN0X25hbWUiOiJMYXN0IiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlzX3N0YWZmIjpmYWxzZSwiaXNfYWN0aXZlIjp0cnVlLCJkYXRlX2pvaW5lZCI6IjIwMjMtMTAtMjRUMTM6MjQ6MjguOTEyMzkyWiIsIkJ1ZGdldCI6MC4wLCJ1c2VyX3Blcm1pc3Npb25zIjpbXX0.u3JzYRPfoiuu22_wQkh0bw-l673FksGyi_XofHTM8io"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

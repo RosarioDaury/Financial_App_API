@@ -1,0 +1,104 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Transactions",
+    "dateExported": "2023-11-19T01:40:46.429Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fad299dc-e4f3-4aba-9e98-dde35a6a2088",
+            "colId": "2778d8bb-2cc7-489b-a157-c95765382ba3",
+            "containerId": "",
+            "name": "Get All Transactions",
+            "url": "http://127.0.0.1:8000/api/transactions/get/all",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-15T21:16:18.517Z",
+            "modified": "2023-11-17T20:32:22.670Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzc3dvcmQiOiJwYmtkZjJfc2hhMjU2JDYwMDAwMCRyOWVWOHVKN29hdEFzNW13VkplQVd2JG1hd3QvZElJQzdsTFY5SjZrSFpxeW1BK3A1dU5McWM3Um9OSVRUYmpYTEE9IiwibGFzdF9sb2dpbiI6bnVsbCwiaXNfc3VwZXJ1c2VyIjp0cnVlLCJ1c2VybmFtZSI6IlJvc2ExMiIsImZpcnN0X25hbWUiOiIiLCJsYXN0X25hbWUiOiIiLCJlbWFpbCI6ImRhdXJ5QGdtYWlsLmNvbSIsImlzX3N0YWZmIjp0cnVlLCJpc19hY3RpdmUiOnRydWUsImRhdGVfam9pbmVkIjoiMjAyMy0xMC0yMFQxNjozNzo0NS4zMjg2MDlaIiwiQnVkZ2V0IjowLjAsIkFjY291bnRfdHlwZSI6MCwidXNlcl9wZXJtaXNzaW9ucyI6W119.Ec8Nd62faD1OhmzKe5rUcIz3Tz3VoRXdZoO6rsALfBY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "35222a81-a6bf-4c38-a772-e8615585d969",
+            "colId": "2778d8bb-2cc7-489b-a157-c95765382ba3",
+            "containerId": "",
+            "name": "Get Transaction Types",
+            "url": "http://127.0.0.1:8000/api/transactions/types/get",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-15T21:24:28.366Z",
+            "modified": "2023-11-16T02:08:03.546Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bfd50b05-b0c9-442b-ac02-d8bb57d5ca41",
+            "colId": "2778d8bb-2cc7-489b-a157-c95765382ba3",
+            "containerId": "",
+            "name": "Create Transaction",
+            "url": "http://127.0.0.1:8000/api/transactions/create",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-15T21:25:20.973Z",
+            "modified": "2023-11-19T00:31:43.124Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzc3dvcmQiOiJwYmtkZjJfc2hhMjU2JDYwMDAwMCRyOWVWOHVKN29hdEFzNW13VkplQVd2JG1hd3QvZElJQzdsTFY5SjZrSFpxeW1BK3A1dU5McWM3Um9OSVRUYmpYTEE9IiwibGFzdF9sb2dpbiI6bnVsbCwiaXNfc3VwZXJ1c2VyIjp0cnVlLCJ1c2VybmFtZSI6IlJvc2ExMiIsImZpcnN0X25hbWUiOiIiLCJsYXN0X25hbWUiOiIiLCJlbWFpbCI6ImRhdXJ5QGdtYWlsLmNvbSIsImlzX3N0YWZmIjp0cnVlLCJpc19hY3RpdmUiOnRydWUsImRhdGVfam9pbmVkIjoiMjAyMy0xMC0yMFQxNjozNzo0NS4zMjg2MDlaIiwiQnVkZ2V0IjowLjAsIkFjY291bnRfdHlwZSI6MCwidXNlcl9wZXJtaXNzaW9ucyI6W119.Ec8Nd62faD1OhmzKe5rUcIz3Tz3VoRXdZoO6rsALfBY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Amount\": 600,\n  \"Title\": \"Example 2\",\n  \"Description\": \"Example for Description\",\n  \"Type\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "db4f7be6-fc53-461d-a2cf-c17262ce44bd",
+            "colId": "2778d8bb-2cc7-489b-a157-c95765382ba3",
+            "containerId": "",
+            "name": "Get Transactions Filtered",
+            "url": "http://127.0.0.1:8000/api/transactions/get",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-11-15T21:34:12.530Z",
+            "modified": "2023-11-19T01:14:38.167Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsInBhc3N3b3JkIjoicGJrZGYyX3NoYTI1NiQ2MDAwMDAkS0pkM3lMN2JDbFJRN2V2Q3JnQVlaMCRrQWZlV2pNSks2eENvd2tlWm04TEY1TmxFcFdZL2VVdjk3Vnd0MUpzN1MwPSIsImxhc3RfbG9naW4iOm51bGwsImlzX3N1cGVydXNlciI6ZmFsc2UsInVzZXJuYW1lIjoiVXNlcjEiLCJmaXJzdF9uYW1lIjoiVXNlciIsImxhc3RfbmFtZSI6IlRlc3RpbmciLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwiaXNfc3RhZmYiOmZhbHNlLCJpc19hY3RpdmUiOnRydWUsImRhdGVfam9pbmVkIjoiMjAyMy0xMS0xNFQyMDoyMTozOC40NTk2NzZaIiwiQnVkZ2V0IjowLjAsIkFjY291bnRfdHlwZSI6MSwidXNlcl9wZXJtaXNzaW9ucyI6W119._QhUv3tZSgrkP4uNYaucvlALEhUMD2-5KUUGZF1VIoU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "be11eb82-672d-437c-ac1f-b5fe487dfd73",
+            "colId": "2778d8bb-2cc7-489b-a157-c95765382ba3",
+            "containerId": "",
+            "name": "Delete Transaction",
+            "url": "http://127.0.0.1:8000/api/transactions/delete/4",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-11-16T19:23:17.526Z",
+            "modified": "2023-11-17T20:26:23.748Z",
+            "headers": [
+                {
+                    "name": "usertoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzc3dvcmQiOiJwYmtkZjJfc2hhMjU2JDYwMDAwMCRyOWVWOHVKN29hdEFzNW13VkplQVd2JG1hd3QvZElJQzdsTFY5SjZrSFpxeW1BK3A1dU5McWM3Um9OSVRUYmpYTEE9IiwibGFzdF9sb2dpbiI6bnVsbCwiaXNfc3VwZXJ1c2VyIjp0cnVlLCJ1c2VybmFtZSI6IlJvc2ExMiIsImZpcnN0X25hbWUiOiIiLCJsYXN0X25hbWUiOiIiLCJlbWFpbCI6ImRhdXJ5QGdtYWlsLmNvbSIsImlzX3N0YWZmIjp0cnVlLCJpc19hY3RpdmUiOnRydWUsImRhdGVfam9pbmVkIjoiMjAyMy0xMC0yMFQxNjozNzo0NS4zMjg2MDlaIiwiQnVkZ2V0IjowLjAsIkFjY291bnRfdHlwZSI6MCwidXNlcl9wZXJtaXNzaW9ucyI6W119.Ec8Nd62faD1OhmzKe5rUcIz3Tz3VoRXdZoO6rsALfBY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
