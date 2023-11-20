@@ -19,7 +19,8 @@ class CustomUserSerializerCreate(serializers.ModelSerializer):
 
 class TransactionsSerializer(serializers.ModelSerializer):
     Type = serializers.StringRelatedField()
-    User = serializers.StringRelatedField()    
+    User = serializers.StringRelatedField()
+    Category = serializers.StringRelatedField()
     class Meta:
         model = Transactions
         fields = '__all__'

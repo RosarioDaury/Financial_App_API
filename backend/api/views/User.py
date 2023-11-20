@@ -44,6 +44,8 @@ def CreateUser( request ):
         lastName = serializer.validated_data['last_name']
         email = serializer.validated_data['email']
         accountType = serializer.validated_data['Account_type']
+        Budget = serializer.validated_data['Budget']
+        Limit = serializer.validated_data['Limit']
 
         CustomUser.objects.create(
             username = username,
@@ -51,7 +53,9 @@ def CreateUser( request ):
             first_name = firstName,
             last_name = lastName,
             email = email,
-            Account_type = accountType
+            Account_type = accountType, 
+            Budget = Budget,
+            Limit = Limit
         )
 
         return Response({ 'Message': 'User Succesfully Created'}, status = status.HTTP_201_CREATED)

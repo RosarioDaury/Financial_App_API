@@ -29,7 +29,8 @@ def CreateTransaction(request):
         "Amount": request.data['Amount'],
         "Title": request.data['Title'],
         "Description": request.data['Description'],
-        "Type": request.data['Type']
+        "Type": request.data['Type'],
+        "Category": request.data['Category']
     }
     serializer = TransactionsSerializerCreate(data = Data)
     if serializer.is_valid():
@@ -38,13 +39,15 @@ def CreateTransaction(request):
         Title = serializer.validated_data['Title']
         Description = serializer.validated_data['Description']
         Type = serializer.validated_data['Type']
+        Category = serializer.validated_data['Category']
 
         Transactions.objects.create(
             User = User,
             Amount = Amount,
             Title = Title,
             Description = Description,
-            Type = Type
+            Type = Type,
+            Category = Category
         )
 
         return Response({ 'Message': 'Transaction Succesfully Created'}, status = status.HTTP_201_CREATED)
